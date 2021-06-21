@@ -17,12 +17,12 @@ describe('Amazon interface login', () => {
             cy.get('#nav-flyout-ya-newCust > a').click({force:true});
           })
 
-        it('Login and vendor creation', () => {
+        it('Create Account', () => {
             cy.get('#ap_customer_name').click().type('Boubacar');
             cy.get('#ap_email').click().type('boubacar_test@gmail.com');
             cy.get('#ap_password').click().type('SiddyGN224!');
             cy.get('#ap_password_check').click().type('SiddyGN224!');
-            //cy.get('#continue').click();
+            cy.get('#continue').click();
             
         })
     })
